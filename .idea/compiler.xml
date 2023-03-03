@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="swapnow-stripe-payment" />
+        <module name="pay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="pay" target="1.8" />
       <module name="swapnow-stripe-payment" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pay" options="-parameters" />
       <module name="swapnow-stripe-payment" options="-parameters" />
     </option>
   </component>
